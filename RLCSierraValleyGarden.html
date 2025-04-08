@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sierra Valley Gardens</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<body>
+
+<header>
+  <div class="header-content">
+  <h1>Sierra Valley Gardens</h1>
+  <h4>Where city living meets garden serenity</h4>
+  </div>
+</header>
+
+  <main class="tri-fold">
+    <section class="section">
+    <h2>About Robinsons Land</h2>
+    
+    <p> Robinsons Land Corporation (RLC), one of the country’s leading real estate companies, develops and operates shopping malls, hotels, mixed-use properties, office buildings, residential condominiums, and housing projects nationwide. </p>
+    
+    <p> Incorporated on June 4, 1980, RLC is the real estate arm of JG Summit Holdings, Inc., a major Philippine conglomerate involved in consumer foods, agro-industrial and commodity products, telecommunications, petrochemicals, aviation, and finance. </p>
+        
+    <h3>About Sierra Valley Gardens</h3>
+    
+    <p> Sierra Valley Gardens is a sprawling residential community within Sierra Valley — a master-planned, mixed-use development designed to nurture a thriving, independent community. Ideal for young professionals, start-up families, and investors, it features lifestyle destinations, business hubs, and residential spaces. </p>
+    
+    <img src="https://i.imgur.com/YR6Q3K7.jpg" alt="Sierra Valley Gardens Overview" />
+        
+    <h3>Mission:</h3>
+    <p>Communities provided with opportunities for improved education, health & nutrition, community development, disaster response and sustainable environment.</p>
+    
+    <h3>Vision:</h3>
+    <p>A better quality of life for Filipino communities.</p>
+    </section>
+
+    <section class="section">
+    <h2>Amenities</h2>
+
+    <p> In The Sierra Valley Gardens, we put our philosophy of Intentional Design into practice. Beyond amazing aesthetic, your experience as a resident is considered at every stage of the design process. The result? The simplest of experiences are made extraordinary, even unforgettable. </p>
+    
+    <ul>
+    <li>Function Room</li>
+    <li>Gym</li>
+    <li>Children's playroom</li>
+    <li>Jogging Path</li>
+    <li>Swimming Pool and Children's Pool</li>
+    <li>Open Lawn</li>
+    </ul>
+    
+    <iframe src="https://drive.google.com/file/d/1yFl95Hw26quBMukE8CEMfkfcGabzEFUB/preview" width="100%" height="500" style="border: none; max-width: 100%; display: block; margin-top: 20px;" allow="autoplay">
+</iframe>
+    
+    <h3>What Our Residents Say</h3>
+    <div class="testimonials">
+    <blockquote>
+      “We found our forever home here. It’s peaceful, beautiful, and safe.”  
+    <cite>– A Happy Resident</cite>
+    </blockquote>
+      
+    <blockquote>
+      “The amenities are amazing and well-maintained. Our kids love the playroom and pool!”  
+    <cite>– The De Leon Family</cite>
+    </blockquote>
+    
+    <blockquote>
+      “Perfect location and great community vibes. The gym and jogging path are my favorite parts.”  
+    <cite>– Miguel T.</cite>
+    </blockquote>
+  </div>
+</section>
+
+  <section class="section">
+  <img src="https://imgur.com/D1nEQk9.jpg" alt="Stay Updated Image" class="section-image" />
+    <h2>Stay Updated</h2>
+      <p>Subscribe to our newsletter for the latest updates and announcements:</p>
+      <form id="newsletterForm">
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+        <button type="submit">Subscribe Now</button>
+      </form>
+    </section>
+</main>
+
+<footer class="combined-footer">
+  <div class="footer-left">
+    <img src="https://imgur.com/LDWH8mn.png" alt="Logo" class="footer-logo" />
+    <p>© 2023 RLC Residences. Residential Division of Robinsons Land Corporation. All Rights Reserved.</p>
+  </div>
+  <div class="footer-right">
+    <h2>Contact Us</h2>
+    <p>Address: Robinsons Land Corporation Residential Division, City Life Gallery Level 1, Robinsons Galleria, EDSA corner Ortigas Avenue, 1100 Quezon City, Philippines</p>
+    <p>Globe Number: (+63) 917-826-2698</p>
+    <p>Smart Number: (+63) 960-335-1490</p>
+    <p>Email: <a href="mailto:info@robinsonscondominium.com">info@robinsonscondominium.com</a></p>
+  </div>
+</footer>
+
+  <script>
+    document.getElementById('newsletterForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('formMessage');
+
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (name === '' || !emailPattern.test(email)) {
+        alert('Please enter a valid name and email.');
+        return;
+      }
+
+      message.style.display = 'block';
+      document.getElementById('newsletterForm').reset();
+    });
+  </script>
+</body>
+
+</html>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: whitesmoke;
+  color: black;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+header {
+  background-image: url('https://i.imgur.com/mRVu8fk.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 65%;
+  color: black;
+  padding: 100px 10px;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+h1,h4 {
+  color: black;
+  opacity: 100%;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.tri-fold {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.section {
+  background-color: white;
+  padding: 45px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #1a3e5f;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow-y: auto;
+}
+
+
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.section img,
+.section iframe {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #357ab7;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #E1B000;
+}
+
+.combined-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #1a3e5f;
+  color: white;
+  padding: 30px 40px;
+  gap: 60px;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  min-width: 280px;
+}
+
+.footer-left p,
+.footer-right p,
+.footer-right a {
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.footer-right h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.footer-right a {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .combined-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .tri-fold {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 600px;
+  }
+
+.section {
+  width: 32%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+</style>
+</head>
